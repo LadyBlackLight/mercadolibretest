@@ -4,11 +4,9 @@ import { useFetchProduct } from '../../customHooks/useFetchProduct'
 
 export const ProductDetail = () => {
     const params = useParams()
-    console.log("Params", params.id)
 
-    const { product, description, error, attributeExist, condition, imageUrl } = useFetchProduct(params.id)
+    const { product, description, attributeExist, condition, imageUrl } = useFetchProduct(params.id)
 
-    console.log("Mi producto", product, error)
     return (
         <>
             {product &&

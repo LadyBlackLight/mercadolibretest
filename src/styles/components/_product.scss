@@ -31,7 +31,10 @@
         width: 50%;
         @media screen and (max-width: 1024px) {
             width: 100%;
-            img {
+        }
+        img {
+            width: 100%;
+            @media screen and (max-width: 1024px) {
                 width: 80%;
                 margin: 0 auto;
                 display: block;
@@ -78,7 +81,8 @@
             background-color: #2968c8;
         }
         @media screen and (max-width: 1024px) {
-            margin-top: 40px;
+            width: 93%;
+            margin: 40px auto 0;
         }
     }
     .product-view-description-title {
