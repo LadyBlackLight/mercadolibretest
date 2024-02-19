@@ -1,0 +1,64 @@
+.product-card__item {
+    border-bottom: thin solid #eee;
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+}
+.product-card__wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0;
+    width: 100%;
+    text-decoration: none;
+}
+.product-card__content {
+    height: auto;
+    display: flex;
+    flex-flow: wrap column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 40%;
+    margin-left: 10px;
+    @media screen and (max-width:1024px) {
+        width: 55%;
+    }
+}
+.product-card__image {
+    width: 180px;
+    height: 180px;
+    border-radius: 4px;
+    @media screen and (max-width:1024px) {
+        width: 144px;
+        height: auto;
+    }
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+.product-price {
+    color: #333;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.free-shipping {
+    background: url("../../assets/img/camion.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: static;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.product-title {
+    color: #333;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.3;
+    @media screen and (max-width:1024px) {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,38 @@
+.search-result {
+    background-color: #ededed;
+    margin-top: 20px;
+}
+.search-result__container {
+    max-width: 1000px;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 1024px) {
+        padding: 0 15px;
+        width: 90%;
+    }
+}
+.search-result__breadcrumb {
+    color: #9b9b9b;
+    font-size: 14px;
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+    padding: 20px 0;
+}
+.search-result__container-cards {
+    background-color: white;
+    border-radius: 4px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 140px;
+    @media screen and (max-width: 1024px) {
+        margin: 0 0 70px;
+    }
+}

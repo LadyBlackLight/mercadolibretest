@@ -1,0 +1,99 @@
+.product-view {
+    background-color: #ededed;
+    margin-top: 20px;
+}
+.product-view__container {
+    max-width: 1000px;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    @media screen and (max-width: 1024px) {
+        padding: 0 15px;
+        width: 90%;
+    }
+    .product-view__row {
+        display: flex;
+        flex-flow: wrap row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 40px;
+        @media screen and (max-width: 1024px) {
+            display: block;
+            padding: 0;
+        }
+    }
+    .product-view-image {
+        width: 50%;
+        @media screen and (max-width: 1024px) {
+            width: 100%;
+            img {
+                width: 80%;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    }
+    .product-view__stack {
+        width: 45%;
+        @media screen and (max-width: 1024px) {
+            width: 90%;
+        }
+    }
+    .product-view-condition,
+    .product-view-sold {
+        color: rgba(0, 0, 0, 0.55);
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .product-view-title {
+        color: rgba(0, 0, 0, 0.9);
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .product-view-price {
+        font-size: 36px;
+        color: rgba(0, 0, 0, 0.9);
+        font-weight: 300;
+    }
+    .product-view-buy {
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: 600;
+        display: block;
+        padding: 15px 24px;
+        text-align: center;
+        background-color: #3483fa;
+        border-color: transparent;
+        color: #fff;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 80px;
+        width: 60%;
+        &:hover {
+            background-color: #2968c8;
+        }
+        @media screen and (max-width: 1024px) {
+            margin-top: 40px;
+        }
+    }
+    .product-view-description-title {
+        font-size: 24px;
+        font-weight: 400;
+        @media screen and (max-width: 1024px) {
+            font-size: 20px;
+        }
+    }
+    .product-view-description {
+        color: #919191;
+        font-size: 18px;
+        font-weight: 400;
+        @media screen and (max-width: 1024px) {
+            font-size: 16px;
+        }
+    }
+}
